@@ -1,0 +1,2 @@
+bdec,software
+dono,finance
