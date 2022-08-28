@@ -72,7 +72,7 @@ public class JoinNewsPrice {
 
         StreamingQuery query = null;
         try {
-            query = newspricewithInd.writeStream().format("console").outputMode("append").start();
+            query = newspricewithInd.writeStream().format("console").option("truncate", "false").outputMode("append").start();
             //query = ticker.write().format("console");
             query.awaitTermination(1000000);
         } catch (StreamingQueryException e) {
