@@ -1,0 +1,23 @@
+Kafka Spark Assignment
+
+There are two kafka topics, news and prices. 
+The news topic produces news messages in json format. News Message:
+{"ticker": "dono", "date": "2022-07-18", "news": "abc"} 
+
+The prices topic produces price messages in json format. Price Message:
+{"ticker": "bdec", "date": "2022-07-18", "price": 10.08 }  
+
+We need to write a spark streaming job that takes both news and prices and creates a table like this
+
+ticker, industry, date, price, news
+
+Note: that industry will come from the industry dataset - it is a static file
+
+
+To simulate this you can create two kafka topics in your VM and use the console producer and copy paste the messages.
+
+Please ensure the following while uploading your solutions into LMS:
+1. submit the java files only
+2. for setup and other things you can create it as a comment in the java file or submit a setup file with commands on how you set it up. But this is not mandatory. Just the solution is enough
+3. Please dont use too many java files, keep to max of 3 files per submission.
+4. Its mandatory to use spark structured streaming to read kafka records

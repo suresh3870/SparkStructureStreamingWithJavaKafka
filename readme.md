@@ -1,5 +1,9 @@
 # Procedure:
 
+You can follow below for set up Kafka in window:
+
+https://www.geeksforgeeks.org/how-to-install-and-run-apache-kafka-on-windows/
+
 **First create two topics:**
 
 kafka-topics.bat --create --topic newstopic --bootstrap-server localhost:9092
